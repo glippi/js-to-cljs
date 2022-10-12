@@ -1,0 +1,1 @@
+{"version":3,"sources":["frontend/db.cljs"],"mappings":";AAEA,yBAAA,2CAAA,6EAAA,jJAAKA","names":["frontend.db/default-db"],"sourcesContent":["(ns frontend.db)\n\n(def default-db\n  {:transformed-code nil})\n"]}

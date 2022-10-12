@@ -1,0 +1,1 @@
+{"version":3,"sources":["hope.cljs"],"mappings":";AAEA,WAAA,XAAMA;AAAN,AACE,4GAAA,rGAACC","names":["hope/foo","cljs.core.prn"],"sourcesContent":["(ns hope)\n\n(defn foo []\n  (prn \"HOPE\"))\n"]}
