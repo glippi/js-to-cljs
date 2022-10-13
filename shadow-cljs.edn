@@ -10,26 +10,9 @@
   [re-com "2.13.2"]
   [binaryage/devtools "1.0.6"]]
 
- :dev-http
- {8280 "public"
-  8290 "target/browser-test"}
- :builds
-   {:js-to-cljs
-      {:target :node-script
-       :js-options {:js-provider :shadow}
-       :main js-to-cljs.core/parse-str
-       :output-to "out/demo-script/script.js"} :app
-      {:target :browser
-        :output-dir "public/js/compiled"
-        :asset-path "/js/compiled"
-        :modules
-        {:app {:init-fn frontend.core/init}}
-        :devtools
-        {:preloads []}
-        :dev
-        {:compiler-options
-         {:closure-defines
-          {}}}}}}
- 
-
-
+ :dev-http {3000 "public"}
+ :builds {:app {:target :browser
+                :output-dir "public/js/compiled"
+                :asset-path "/js/compiled"
+                :modules {:app {:init-fn frontend.core/init}}
+                :devtools {:preloads []}}}}
