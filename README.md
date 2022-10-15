@@ -9,4 +9,4 @@ So this project is relying 100% on the code of Calva, I just extracted and glued
 Thanks to the people behind Calva for making such a great open source tool to work with Clojure!
 
 ### Similar projects:
-    * [javascript-to-clojurescript](https://github.com/roman01la/javascript-to-clojurescript)
+ - [javascript-to-clojurescript](https://github.com/roman01la/javascript-to-clojurescript)
