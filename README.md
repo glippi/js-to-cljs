@@ -1,4 +1,4 @@
-# Transform JavaScript code into ConjureScript
+# Transform JavaScript code into ClojureScript
 
 This project aims to offer the same translation feature available in [Calva](https://github.com/BetterThanTomorrow/calva), which let you translate snippets of JavaScript into ClojureScript, but in a [web page.](https://glippi.github.io/js-to-cljs/public/index.html)
 
