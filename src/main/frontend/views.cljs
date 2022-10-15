@@ -20,9 +20,7 @@
    [:textarea.h5.db.border-box.hover-black.w-100.ba.b--black-20.pa2.br2.mb2.code
     {:id "js-code" :name "js-code" :on-change #(reset! text (-> % .-target .-value))}]
    [transform-code-button text]])
-   
 
-  
 (defn clojurescript-code [transformed-code]
      [:div.fl.fl-ns.w-50.bg-light-blue.h-100.pa1.br2.br--right-ns
       (when transformed-code
@@ -38,7 +36,7 @@
 (defn main []
   (let [text (r/atom "")
         transformed-code @(subscribe [::subs/transformed-code])]
-    [:article.vh-100.ph3.ph5-ns.pv5.bg-blue
+    [:<>
      [javascript-code text]
      [clojurescript-code transformed-code]
      [footer]]))
